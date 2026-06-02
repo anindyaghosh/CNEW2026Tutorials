@@ -36,10 +36,9 @@ Unlike real brains, it's very easy to access the state of simulated neurons so, 
       ```
     - Then, you can see and manipulate variables through two different
       interfaces:
-        - input.vars["V"].values gives you access to a copy of the
-          values currently in V (you cannot use it to manipulate the value of
-          the running model)
-        - input.vars["V"].view gives you direct access to the (C++
+        - ``input.vars["V"].values`` gives you access to a copy of the
+          values currently in V.
+        - ``input.vars["V"].view`` gives you direct access to the (C++
           allocated) memory of the model, so you could change variable
           values like so:
           ```python
